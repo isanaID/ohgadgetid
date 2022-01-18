@@ -1,0 +1,280 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 100%;
+	background-image: url(/images/bg4.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 2000px;
+}
+
+/*NAVIGASI*/
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	background-image: url(/images/bg4.jpeg);
+	background-size: cover;
+	width: 100%;
+	align-items: center;
+	align-content: center;
+	/* box-shadow: 0px 1px 10px black; */
+	top: 0;
+	position: fixed;
+	z-index: 10;
+}
+
+nav a.judul {
+	text-decoration: none;
+	font-size: 25px;
+	margin-left: 3%;
+	padding: 10px;
+}
+
+nav a.judul img {
+	width: 60%;
+}
+
+nav div.menu {
+	display: flex;
+	justify-content: space-evenly;
+	margin-right: 3%;
+	width: 50%;
+}
+
+nav div.menu a {
+	text-decoration: none;
+	font-size: 18px;
+	/* color: #110a75; */
+	color: navy;
+	padding: 10px;
+}
+
+nav div.menu a:hover {
+	border-radius: 5px;
+	background-color: #110a75;
+	color: white;
+}
+
+nav div.menu a:nth-child(1) {
+	border-radius: 5px;
+	background-color: #110a75;
+	color: white;
+}
+
+/*PEMBUKA*/
+
+div.sambut {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	width: 100%;
+	margin: 200px auto 300px auto;
+	font-family: "Roboto", sans-serif;
+}
+
+div.sambut div.tulisan div.satu {
+	color: white;
+	margin-bottom: 30px;
+}
+
+div.sambut div.tulisan div.dua {
+	margin-bottom: 30px;
+}
+
+div.sambut div.tulisan div.dua h1 {
+	color: #D8FA09;
+	font-weight: bold;
+}
+
+div.sambut div.tulisan div.tiga  {
+	color: white;
+	margin-bottom: 40px;
+}
+
+div.sambut div.tulisan div.empat {
+	width: 100%;
+}
+
+div.sambut div.tulisan div.empat a {
+	text-decoration: none;
+	color: white;
+	background-color: navy;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/*CARI HP*/
+
+div.filter {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+div.filter img {
+	width: 35%;
+	margin-top: -20px;
+}
+
+div.filter div.cari h1 {
+	color: #D8FA09;
+	font-family: "Roboto", sans-serif;
+	margin-bottom: 50px;
+	font-weight: bolder;
+}
+
+div.filter div.cari form {
+	display: flex;
+	flex-direction: column;
+}
+
+div.filter div.cari form input, div.filter div.cari form label {
+	outline: none;
+	padding: 10px;
+	background-color: white;
+	border-radius: 5px;
+	color: rgb(4,66,165);
+	font-size: 20px;
+	border: none;
+	margin-bottom: 20px;
+	border: 2px solid rgb(4,66,165);
+}
+
+div.filter div.cari form label {
+	font-style: italic;
+	padding: 10px 30px 10px 10px;
+}
+
+div.filter div.cari form input::-webkit-input-placeholder {
+	color: rgb(4,66,165);
+	font-style: italic;
+}
+
+div.filter div.cari form select {
+	outline: none;
+	padding: 10px;
+	background-color: white;
+	border-radius: 5px;
+	color: rgb(4,66,165);
+	font-size: 20px;
+	border: 2px solid rgb(4,66,165);
+	cursor: pointer;
+}
+
+div.filter div.cari form button {
+	border: none;
+	outline: none;
+	padding: 20px;
+	background-color: white;
+	border-radius: 5px;
+	color: rgb(4,66,165);
+	font-weight: bold;
+	transition: .1s;
+	font-size: 30px;
+	margin-top: 20px;
+	border: 2px solid rgb(4,66,165);
+}
+
+div.filter div.cari form button:hover {
+	background-color: navy;
+	color: white;
+}
+
+div.filter div.cari form button:active {
+	transform: scale(.9);
+}
+
+@media(max-width: 1030px) {
+
+}
+
+.table-head {
+    display: flex;
+    background-color: #b7cadc;
+    border-radius: 2px 2px 0 0;
+    height: 44px;
+    font-size: 16px;
+    line-height: 46px;
+    color: #ffffff;
+  }
+  
+  .id-column {
+    width: 72px;
+    text-align: center;
+  }
+  
+  .table-body {
+    background-color: #ffffff;
+  }
+  
+  .table-body li {
+    height: 72px;
+    border: 1px solid #f0f4f9;
+    border-top: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .table-body .id-column {
+    font-size: 16px;
+    color: #bac6d3;
+  }
+  
+  .table-body .name-column {
+    font-size: 14px;
+    font-weight: 500;
+    color: #8491a5;
+  }
+  
+  .item-data {
+    display: flex;
+  }
+  
+  .item-menu {
+    display: flex;
+  }
+  
+  .item-menu form {
+    width: 60px;
+    text-align: center;
+  }
+  
+  .item-menu form input {
+    font-size: 16px;
+    color: #bac6d3;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  
+  .item-menu form input:hover {
+    color: #ff7f8c;
+    transition: all 0.3s ease;
+  }
+  
+  .item-menu a {
+    width: 60px;
+    font-size: 16px;
+    color: #bac6d3;
+    text-align: center;
+  }
+  
+  .item-menu a:hover {
+    color: #80bcff;
+  }
+
+.table-body ul {
+    padding-left: 0px !important;
+}

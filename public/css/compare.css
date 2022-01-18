@@ -1,0 +1,113 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/*ISINYA*/
+
+div.comp {
+	margin: 150px auto 0 auto;
+	display: flex;
+	justify-content: center;
+	width: 95%;
+	align-items: center;
+	align-content: center;
+}
+
+div.comp div.box {
+	margin-right: 30px;
+	padding: 10px;
+	background-color: navy;
+	border-radius: 5px;
+	color: white;
+}
+
+div.comp form {
+	width: 60%;
+}
+
+div.comp form input {
+	padding: 15px;
+	font-size: 20px;
+	border-radius: 5px;
+	outline: none;
+	background-color: white;
+	color: black;
+	width: 80%;
+}
+
+div.comp form button {
+	padding: 15px;
+	font-size: 20px;
+	border-radius: 5px;
+	background-color: navy;
+	color: white;
+	outline: none;
+	border: none;
+}
+
+div.compare {
+	display: flex;
+	width: 95%;
+	margin: 80px auto;
+}
+
+div.compare div.score {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	/*border-right: 2px solid black;*/
+}
+
+div.compare div.score h1 {
+	margin-bottom: 20px;
+	margin-top: 180px;
+	text-align: right;
+}
+
+div.compare div.score p {
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+div.compare div.bandingan {
+	flex: 4;
+	display: flex;
+	justify-content: center;
+}
+
+div.compare div.bandingan div.bungkusan {
+	padding-right: 50px;
+	border-right: 1px solid black;
+	margin-right: 50px;
+}
+
+div.compare div.bandingan div.bungkusan:nth-last-child(1) {
+	border-right: none;
+}
+
+div.compare div.bandingan div.bungkusan div.hape {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 50px;
+}
+
+div.compare div.bandingan div.bungkusan div.nilai {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	background-color: green;
+	border-radius: 5px;
+	color: white;
+	padding: 10px;
+}
+
+div.compare div.bandingan div.bungkusan div.detail {
+	margin-top: 50px;
+}
+
+div.compare div.bandingan div.bungkusan div.detail p {
+	margin-top: 10px;
+	font-size: 20px;
+}

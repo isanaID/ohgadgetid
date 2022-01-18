@@ -1,0 +1,43 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/*NAVIGASI*/
+
+nav {
+	background-color: white;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	z-index: 100;
+	align-items: center;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+nav div.menu {
+	width: 50%;
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
+	align-items: center;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+nav div.menu a {
+	text-decoration: none;
+	color: black;
+	font-family: "Poppins Robbins", sans-serif;
+	font-size: 20px;
+}
+
+nav div.menu a span {
+	color: blue;
+}

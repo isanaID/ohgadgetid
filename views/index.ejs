@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LIST</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="judul" href="#">
+          <img src="/images/logo2.png" alt="Logo SIM.ID">
+        </a>
+        <div class="menu">
+          <a href="/">Home</a>
+          <a href="">About</a>
+          <a href="">Service</a>
+          <a href="">Blog</a>
+          <a href="">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="container-header">
+        <h1>Rekomendasi</h1>
+      </div>
+      
+      <div class="d-flex justify-content-around">
+        <% smartphone.forEach((item) => { %>
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.freepnglogos.com/uploads/iphone-png/the-iphone-ten-png-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title"><%= item.Merk%> <%= item.Type%></h5>
+            <p class="card-text">RAM : <%= item.Ram %> GB Rom : <%= item.Rom%> GB<br>Rp.<%= item.Harga*14300%></p>
+            </div>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#<%= item.Merk%><%= item.IDHP%>">
+  Detail
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="<%= item.Merk%><%= item.IDHP%>" tabindex="-1" aria-labelledby="<%= item.Merk%>" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><%= item.Merk%> <%= item.Type%></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://www.freepnglogos.com/uploads/iphone-png/the-iphone-ten-png-3.png" class="card-img-top" alt="...">
+            <h5 class="card-title"><%= item.Merk%> <%= item.Type%></h5>
+            <p class="card-text">Processor : <%= item.Processor %><br> 
+              RAM : <%= item.Ram %> GB Rom : <%= item.Rom%> GB<br>
+              Rp.<%= item.Harga*14300%><br>
+              <%= item.Screen_Type%><br>
+            </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Beli</button>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+        <% }) %>
+      </div>
+      <!-- <div class="index-table-wrapper">
+        <div class="table-head">
+          <span class="id-column">ID</span>
+          <span>Merk</span>
+        </div>
+        <ul class="table-body">
+          <% smartphone.forEach((item) => { %>
+            <li>
+              <div class="item-data">
+                <span class="id-column"><%= item.IDHP %></span>
+                <span class="name-column"><%= item.Merk %></span>
+                <span class="name-column"><%= item.Type %></span>
+              </div>
+            </li>
+          <% }) %>
+        </ul>
+      </div> -->
+    </div>
+  </body>
+</html>

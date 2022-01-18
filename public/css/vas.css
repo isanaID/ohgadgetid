@@ -1,0 +1,124 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/*ISINYA*/
+
+div.content {
+	width: 100%;
+	display: flex;
+	margin-top: 100px;
+}
+
+div.content div.filter {
+	flex: 1;
+	border-right: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+div.content div.filter div.fil, div.content div.filter div.price {
+	align-items: center;
+	align-content: center;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 20px;
+}
+
+div.content div.filter div.fil img, div.content div.filter div.price img {
+	width: 20%;
+}
+
+div.content div.filter form select {
+	width: 100%;
+	font-size: 15px;
+	height: 50px;
+	color: white;
+	padding: 5px;
+	border: none;
+	outline: none;
+	background-color: darkblue;
+}
+
+div.prtscrs h1 {
+	margin: 20px;
+}
+
+div.prtscrs div.desain {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	margin: 10px auto 0 auto;
+	width: 80%;
+}
+
+div.prtscrs div.desain div.score {
+	display: flex;
+	justify-content: center;
+}
+
+div.prtscrs div.desain div.score div.warna {
+	width: 20px;
+	height: 20px;
+	border: 1px solid white;
+}
+
+div.prtscrs div.desain div.score div.warna:nth-child(1) {
+	background-color: #d40505;
+}
+
+div.prtscrs div.desain div.score div.warna:nth-child(2) {
+	background-color: #d45a05;
+}
+
+div.prtscrs div.desain div.score div.warna:nth-child(3) {
+	background-color: #fbe206;
+}
+
+div.prtscrs div.desain div.score div.warna:nth-child(4) {
+	background-color: #5ed405;
+}
+
+div.prtscrs div.desain div.score div.warna:nth-child(5) {
+	background-color: #05d423;
+}
+
+div.prtscrs div.desain div.score div.warna:nth-child(6) {
+	background-color: #06fb36;
+}
+
+a.comparison {
+	width: 80%;
+	background-color: darkblue;
+	color: white;
+	text-align: center;
+	margin: 50px auto 0 auto;
+	border-radius: 30px;
+	padding: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+/*ISI HP*/
+
+div.content div.isi {
+	flex: 4;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+div.content div.isi div.box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	margin: 20px;
+}
+
+div.content div.isi div.box img {
+	margin-right: 10px;
+}
