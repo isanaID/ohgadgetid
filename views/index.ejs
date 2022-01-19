@@ -35,6 +35,10 @@
             <h5 class="card-title"><%= item.Merk%> <%= item.Type%></h5>
             <p class="card-text">RAM : <%= item.Ram %> GB Rom : <%= item.Rom%> GB<br>Rp.<%= item.Harga*14300%></p>
             </div>
+            <div class="d-flex justify-content-center mb-3">
+            <button href="#" type="button" class="btn btn-outline-danger">Like</button>
+            <button href="#" type="button" class="btn btn-outline-dark">Dislike</button>
+          </div>
             <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#<%= item.Merk%><%= item.IDHP%>">
   Detail
